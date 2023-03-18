@@ -40,7 +40,11 @@ function ContactForm() {
         </form>
         {sent && (
             <div className="thanks">
-                <p className="thanks-message">Tack för ditt meddelande! Vi återkommer inom kort!</p>
+                <p className="thanks-message">
+                    <strong>Tack för ditt meddelande! </strong>
+                    <br/> <br/>
+                    Vi återkommer inom kort!
+                    </p>
                 <button className="close-thanks" onClick={handleClose}>&#10005;</button>
             </div>
         )}

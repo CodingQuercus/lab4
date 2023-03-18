@@ -1,20 +1,20 @@
-import { useState } from "react";
-
 import CheckoutPayment from "./CheckoutPayment";
 import CheckoutTotalTable from "./CheckoutTotalTable"
 
-function CheckoutForm() {
-
-    const [order, setOrdered] = useState(false)
+function CheckoutForm( {toggleContent} ) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setOrdered(true);
+        toggleContent();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     }
 
     return (
         <>
-            <form action="" method="" className="form-checkout" onSubmit={handleSubmit} id={order? "hide" : ""}>
+            <form className="form-checkout" onSubmit={handleSubmit}>
                 <h3>Kundinformation</h3>
                 <label>
                     <span className="fname">Förnamn <span className="required"> *</span></span>
@@ -61,15 +61,8 @@ function CheckoutForm() {
                 <CheckoutTotalTable />
                 <CheckoutPayment />
                 <br />
-                <button className="order-button" type="submit">Lägg beställning</button>
+                <button className="order-button" type="submit" >Lägg beställning</button>
             </form>
-            {order && (
-                <div className="thanks">
-                    <p className="thanks-message">
-                        Tack för din beställning! Orderbekräftelse skickas till din e-post inom kort!
-                    </p>
-                </div>
-            )}
         </>
     )
 }
