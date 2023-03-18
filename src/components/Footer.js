@@ -1,6 +1,14 @@
 import React from "react";
 
 export default function Footer() {
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+    }
+
     return (
         <footer>
             <p className="company-info">
@@ -23,7 +31,7 @@ export default function Footer() {
                 </figure>
             </a>
             <a href="video.html">Länk till video</a>
-            <button className="top-btn">
+            <button className="top-btn" onClick={scrollToTop}>
                 <img src="BilderSmaller/arrow_upward_FILL0_wght400_GRAD0_opsz40.svg"
                     alt="Klicka för att scrolla till toppen" />
             </button>
