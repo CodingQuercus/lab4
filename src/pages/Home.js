@@ -15,7 +15,6 @@ export default function Home() {
                 <div className="content">
                     {ProductsData.map((product) =>
                         <ProductCard 
-                            key={product.id}
                             img={product.img}
                             alt={product.alt}
                             link={product.link}
