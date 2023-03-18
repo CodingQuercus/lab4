@@ -748,13 +748,13 @@ footer .top-btn {
 
 .form-checkout label>span {
    float: left;
-   width: 80%;
+   width: 90%;
    padding-right: 10px;
    padding-bottom: 10px;
 }
 
 .form-checkout input {
-   width: 80%;
+   width: 90%;
    padding: 10px;
    border: 0;
    transition: all .5s;
@@ -763,19 +763,19 @@ footer .top-btn {
 
 .form-checkout input[type="text"],
 .form-checkout input[type="tel"],
-.form-checkout input[type="email"],
-.form-checkout select {
-   width: 80%;
+.form-checkout input[type="email"] {
+   width: 90%;
    height: 30px;
    padding: 5px 10px;
    margin-bottom: 15px;
 }
 
 .form-checkout select {
-   width: 80%;
+   width: 90%;
    height: 30px;
    padding: 5px 10px;
    border-radius: 10px;
+   margin-bottom: 15px;
 }
 
 .form-checkout select:hover, 
@@ -787,17 +787,21 @@ footer .top-btn {
    border: 1px #EF9308 solid;
 }
 
-.payment {
-   display: grid;
+.order {
+   display:grid;
 }
 
-.order>input {
+.order>label {
+   display: flex;
    padding: 10px 0;
 }
 
 .required {
    color: red;
 }
+
+
+
 /*TABLE STYLES*/
 table {
    width: 50%;
@@ -814,19 +818,17 @@ table {
 
 /*BUTTON STYLES*/
 .order-button {
-   width: 80%;
-   border-radius: 10px;
-   border: #1d1d1d 1px solid;
-   background: none;
+   width: 90%;
+   border: solid 1px #EF9308;
    font-size: 16px;
-   font-weight: 300;
-   text-align: center;
+   align-items: center;
+   justify-content: center;
+   padding: 10px;
 }
 
-.form-contact button:hover,
-.order button:hover {
+.order-button:hover {
    cursor: pointer;
-   background: #EF9308;
+   font-size: 20px;
    transition: all 0.5s;
 }
 

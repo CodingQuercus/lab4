@@ -5,7 +5,8 @@ export default function Checkout() {
     return (
         <main>
             <div className="main-content">
-                <h2>Varukorg</h2>
+                <h2>Kassa</h2>
+                <p>Här visas din varukorg</p>
                 <CheckoutCard
                     title="Zen 2 - Nate Perkins"
                     img="Bilder/zen1.png"
