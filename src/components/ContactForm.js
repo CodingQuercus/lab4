@@ -1,9 +1,15 @@
 function ContactForm() {
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        alert("Tack för ditt meddelande! Vi återkommer inom kort!");
+    }
+
     return (
-        <form action="" className="form-contact">
+        <form action="" className="form-contact" onSubmit={handleSubmit}>
             <label>
-                <span className="name">Namn: <span className="required"> *</span></span>
-                <input type="text" name="name" placeholder="För- och efternamn" />
+                <span className="name"> Namn: <span className="required" > *</span></span>
+                <input type="text" placeholder="För- och efternamn"/>
             </label>
             <label>
                 <span className="E-post">E-postadress: <span className="required"> *</span></span>

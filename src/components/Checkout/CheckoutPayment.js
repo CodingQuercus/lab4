@@ -3,7 +3,7 @@ function CheckoutPayment() {
         <div className="order">
             <h3>Betalmetod</h3>
             <div>
-                <input type="radio" name="dbt" value="dbt" defaultChecked={true} /> Kortbetalning
+                <input type="radio" name="dbt" value="dbt" /> Kortbetalning
             </div>
             <div>
                 <input type="radio" name="dbt" value="cd" /> Swish
@@ -14,7 +14,7 @@ function CheckoutPayment() {
             <div>
                 <input type="radio" name="dbt" value="cd" /> Presentkort
             </div>
-            <button type="button">Beställ</button>
+            <button type="submit">Beställ</button>
         </div>
     )
 }

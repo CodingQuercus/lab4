@@ -1,5 +1,6 @@
-const ProductsData = [
+const productsData = [
     {
+        id: 1, 
         img: 'Bilder/zen1.png', 
         link: '/productzen',
         alt: 'Discmania Zen 2 - Nate Perkins',
@@ -8,6 +9,7 @@ const ProductsData = [
         price: '239 sek'
     },
     {
+        id: 2,
         img: "Bilder/mermaid.png",
         alt: "Discmania Mermaid Active Line",
         link: "/productmermaid",
@@ -16,6 +18,7 @@ const ProductsData = [
         price: "99 sek"
     },
     {
+        id: 3,
         img: "Bilder/lonehowl.png",
         alt: "Discmania Lone Howl 3 - Colten Montgomery",
         link:"/productlonehowl",
@@ -24,6 +27,7 @@ const ProductsData = [
         price: "239 sek"
     },
     {
+        id: 4,
         img: "Bilder/moominsniff.png",
         alt: "K1 Soft Kaxe X Moomin - Sniff",
         link: "/testproduct",
@@ -32,6 +36,7 @@ const ProductsData = [
         price: "199 sek",
     },
     {
+        id: 5,
         img: "Bilder/moomintroll.png",
         alt: "K3 Reko X Moomin - Moomintroll",
         link: "/product",
@@ -40,6 +45,7 @@ const ProductsData = [
         price: "149 sek",
     },
     {
+        id: 6,
         img: "Bilder/moomin.png",
         alt: "K3 Berg X Moomin - Moomin",
         link: "/product",
@@ -48,6 +54,7 @@ const ProductsData = [
         price: "149 sek",
     },
     {
+        id: 7,
         img: "Bilder/moominmamma.png",
         alt: "K1 Lots X Moomin - Moominmamma",
         link: "/product",
@@ -56,6 +63,7 @@ const ProductsData = [
         price: "199 sek",
     },
     {
+        id: 8,
         img: "Bilder/moominsnufkin.png",
         alt: "K1 Soft Berg X Moomin - Snufkin",
         link: "/product",
@@ -64,6 +72,7 @@ const ProductsData = [
         price: "199 sek",
     },
     {
+        id: 9,
         img: "Bilder/moomingroke.png",
         alt: "K1 Guld (HalvGlow) X Moomin - The Groke",
         link: "/product",
@@ -72,6 +81,7 @@ const ProductsData = [
         price: "199 sek",
     },
     {
+        id: 10,
         img: "Bilder/orbit.png",
         alt: "GETAWAY Fuzion Orbit - Mason Ford",
         link: "/product",
@@ -80,6 +90,7 @@ const ProductsData = [
         price: "269 sek",
     },
     {
+        id: 11,
         img: "Bilder/hope.png",
         alt: "Hope Royal Sense Orbit",
         link: "/product",
@@ -88,6 +99,7 @@ const ProductsData = [
         price: "169 sek",
     },
     {
+        id: 12,
         img: "Bilder/escape.png",
         alt: "Escape Supreme - First Run",
         link: "/product",
@@ -97,4 +109,4 @@ const ProductsData = [
     }
 ]
 
-export default ProductsData;
+export default productsData;
