@@ -1,6 +1,15 @@
+import CheckoutPayment from "./CheckoutPayment";
+import CheckoutTotalTable from "./CheckoutTotalTable"
+
 function CheckoutForm() {
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        alert("Tack för din beställning!");
+    }
+
     return (
-        <form action="" method="" className="form-checkout">
+        <form action="" method="" className="form-checkout" onSubmit={handleSubmit}>
             <h3>Kundinformation</h3>
             <label>
                 <span className="fname">Förnamn <span className="required"> *</span></span>
@@ -43,6 +52,11 @@ function CheckoutForm() {
                 <span>E-post<span className="required"> *</span></span>
                 <input type="email" name="email" placeholder="" />
             </label>
+            <h3>Att betala</h3>
+            <CheckoutTotalTable/>
+            <CheckoutPayment/>
+            <br />
+            <button className="order-button" type="submit">Beställ</button>
         </form>
     )
 }

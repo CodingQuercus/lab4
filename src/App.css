@@ -743,12 +743,14 @@ footer .top-btn {
    border: 1px #EF9308 solid;
 }
 
-.order>div {
-   padding: 15px 0;
+
+
+.payment {
+   display: grid;
 }
 
-.order {
-   display: grid;
+.order>input {
+   padding: 10px 0;
 }
 
 .required {
@@ -770,7 +772,7 @@ table {
 
 /*BUTTON STYLES*/
 .form-contact button,
-.order button {
+.order-button {
    width: 80%;
    border-radius: 10px;
    border: #1d1d1d 1px solid;

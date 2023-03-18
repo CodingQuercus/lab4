@@ -1,7 +1,5 @@
 import CheckoutCard from "../components/Checkout/CheckoutCard";
 import CheckoutForm from "../components/Checkout/CheckoutForm";
-import CheckoutPayment from "../components/Checkout/CheckoutPayment";
-import CheckoutTotalTable from "../components/Checkout/CheckoutTotalTable";
 
 export default function Checkout() {
     return (
@@ -14,9 +12,6 @@ export default function Checkout() {
                     price="239 sek"
                 />
                 <CheckoutForm />
-                <h3>Att betala</h3>
-                <CheckoutTotalTable />
-                <CheckoutPayment />
             </div>
         </main>
     )

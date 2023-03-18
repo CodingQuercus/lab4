@@ -1,20 +1,11 @@
 function CheckoutPayment() {
     return (
-        <div className="order">
+        <div className="payment">
             <h3>Betalmetod</h3>
-            <div>
-                <input type="radio" name="dbt" value="dbt" /> Kortbetalning
-            </div>
-            <div>
-                <input type="radio" name="dbt" value="cd" /> Swish
-            </div>
-            <div>
-                <input type="radio" name="dbt" value="cd" /> Paypal
-            </div>
-            <div>
-                <input type="radio" name="dbt" value="cd" /> Presentkort
-            </div>
-            <button type="submit">Beställ</button>
+            <input type="radio" name="dbt" value="dbt" /> Kortbetalning
+            <input type="radio" name="dbt" value="cd" /> Swish
+            <input type="radio" name="dbt" value="cd" /> Paypal
+            <input type="radio" name="dbt" value="cd" /> Presentkort
         </div>
     )
 }
