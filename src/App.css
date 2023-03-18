@@ -651,13 +651,10 @@ footer .top-btn {
 
 
 /*FORM STYLES*/
-.form-checkout input,
-.form-contact input {
-   width: 80%;
-   padding: 10px;
-   border: 0;
-   transition: all .5s;
-   border-bottom: 2px solid #1d1d1d;
+
+.form-checkout input:hover,
+.form-contact input:hover {
+   border-bottom: 2px solid #EF9308;
 }
 
 .form-checkout input:focus,
@@ -673,37 +670,31 @@ footer .top-btn {
    color: #1d1d1d;
 }
 
-.order {
-   display: grid;
+.form-contact input {
+   width: 80%;
+   padding: 10px;
+   border: 0;
+   transition: all .5s;
+   border-bottom: 2px solid #1d1d1d;
 }
 
-.required {
-   color: red;
-}
 
-.form-checkout label>span,
 .form-contact label>span {
    float: left;
-   width: 100%;
+   width: 80%;
    padding-right: 10px;
    padding-bottom: 10px;
 }
 
-.form-checkout input[type="text"],
-.form-checkout input[type="tel"],
-.form-checkout input[type="email"],
-.form-checkout select,
 .form-contact input[type="text"],
 .form-contact input[type="tel"],
 .form-contact input[type="email"],
-.form-checkout select {
+.form-contact select {
    width: 80%;
    height: 30px;
    padding: 5px 10px;
    margin-bottom: 15px;
 }
-
-.form-checkout select,
 .form-contact select {
    width: 80%;
    height: 30px;
@@ -711,10 +702,58 @@ footer .top-btn {
    border-radius: 10px;
 }
 
+.form-checkout label>span {
+   float: left;
+   width: 80%;
+   padding-right: 10px;
+   padding-bottom: 10px;
+}
+
+.form-checkout input {
+   width: 80%;
+   padding: 10px;
+   border: 0;
+   transition: all .5s;
+   border-bottom: 2px solid #1d1d1d;
+}
+
+.form-checkout input[type="text"],
+.form-checkout input[type="tel"],
+.form-checkout input[type="email"],
+.form-checkout select {
+   width: 80%;
+   height: 30px;
+   padding: 5px 10px;
+   margin-bottom: 15px;
+}
+
+.form-checkout select {
+   width: 80%;
+   height: 30px;
+   padding: 5px 10px;
+   border-radius: 10px;
+}
+
+.form-checkout select:hover, 
+.form-contact select:hover {
+   border: 1px #EF9308 solid;
+}
+
+.form-checkout select::after {
+   border: 1px #EF9308 solid;
+}
+
 .order>div {
    padding: 15px 0;
 }
 
+.order {
+   display: grid;
+}
+
+.required {
+   color: red;
+}
 /*TABLE STYLES*/
 table {
    width: 50%;

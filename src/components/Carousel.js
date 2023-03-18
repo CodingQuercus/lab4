@@ -2,24 +2,11 @@ import React from "react";
 
 import { useState } from "react";
 
+import images from "../data/Images"
+
 function Carousel() {
 
     const[index, setIndex] = useState(0);
-    
-    const images = [
-        {
-            img: "./Bilder/discmania.png",
-            alt: "Discmania nyheter"
-        },
-        {
-            img: "./Bilder/bags.png",
-            alt: "Latitude64 väskor"
-        },
-        {
-            img: "./Bilder/paradigm.png",
-            alt: "Discmania Paradigm"
-        }
-    ]
 
     function prevImg() {
         var newIndex = index;
@@ -42,7 +29,7 @@ function Carousel() {
         }
         setIndex(newIndex);
     }
-
+ 
     return (
         <div className="main-image">
             <img src={images[index].img} alt={images[index].alt} className="image" />
