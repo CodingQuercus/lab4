@@ -34,7 +34,7 @@ function CheckoutForm() {
                         <option value="select">Välj ett land...</option>
                         <option value="DEN">Danmark</option>
                         <option value="FIN">Finland</option>
-                        <option value="SWE">Sweden</option>
+                        <option value="SWE">Sverige</option>
                     </select>
                 </label>
                 <label>
