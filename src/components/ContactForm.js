@@ -1,34 +1,50 @@
+import { useState } from "react";
+
 function ContactForm() {
+    const [sent, setSent] = useState(false)
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert("Tack för ditt meddelande! Vi återkommer inom kort!");
+        setSent(true);
+    }
+
+    const handleClose = (e) => {
+        e.preventDefault();
+        setSent(false);
     }
 
     return (
-        <form action="" className="form-contact" onSubmit={handleSubmit}>
+        <>
+        <form className="form-contact" onSubmit={handleSubmit} id={sent? "hide" : ""}>
             <label>
-                <span className="name"> Namn: <span className="required" > *</span></span>
-                <input type="text" placeholder="För- och efternamn"/>
+                <span> Namn: <span className="required" > *</span></span>
+                <input type="text" name="name" placeholder="För- och efternamn"/>
             </label>
             <label>
-                <span className="E-post">E-postadress: <span className="required"> *</span></span>
+                <span>E-postadress: <span className="required"> *</span></span>
                 <input type="text" name="email" placeholder="E-postadress" />
             </label>
             <label>
-                <span className="telephone">Telefonnummer (Frivilligt): </span>
-                <input type="text" name="telephone" placeholder="Telefonnummer" />
+                <span>Telefonnummer (Frivilligt): </span>
+                <input type="text" name="phone" placeholder="Telefonnummer" />
             </label>
             <label>
-                <span className="errand">Ärende: <span className="required"> *</span></span>
-                <input type="text" name="errand" placeholder="Beskriv ditt ärende" />
+                <span>Ärende: <span className="required"> *</span></span>
+                <input type="text"  placeholder="Beskriv ditt ärende" />
             </label>
             <label>
-                <span className="message">Meddelande: <span className="required"> *</span></span>
-                <input type="text" name="message" placeholder="Fyll i ditt meddelande, inkludera detaljer" />
+                <span>Meddelande: <span className="required"> *</span></span>
+                <textarea className="message" type="text" placeholder="Fyll i ditt meddelande, inkludera detaljer" />
             </label>
-            <button type="submit" className="send-btn">Skicka</button>
+            <button type="submit" className="send-btn">&#8658;</button>
         </form>
+        {sent && (
+            <div className="thanks">
+                <p className="thanks-message">Tack för ditt meddelande! Vi återkommer inom kort!</p>
+                <button className="close-thanks" onClick={handleClose}>&#10005;</button>
+            </div>
+        )}
+        </>
     )
 }
 export default ContactForm;
