@@ -1007,6 +1007,14 @@ table {
       width: 180px;
    }
 
+   .news .item-card {
+      width: 90%;
+   }
+
+   .news .added-to-cart {
+      width: 90%;
+   }
+
    .wishlist-items {
       grid-template-columns: 1fr;
    }
