@@ -538,6 +538,25 @@ figcaption {
    box-shadow: #EF9308 0px 5px 15px 0px;
 }
 
+.added-to-cart {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+   width: auto;
+   height: auto;
+   gap: 10px 10px;
+   border-radius: 10px;
+   padding: 20px;
+   box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px 0px;
+   background-color: none;
+   align-items: center;
+   justify-content: center;
+}
+
+.added-to-cart i {
+   font-size: 36px;
+}
 
 
 /*PRODUCT CARD STYLES*/

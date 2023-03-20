@@ -7,7 +7,7 @@ function ProductPage(props) {
     const [favorite, setFavorite] = useState(true);
 
     const addFavoriteItem = () => {
-        setFavorite(!favorite)
+        setFavorite(!favorite);
     };
 
     return (
@@ -51,7 +51,6 @@ function ProductPage(props) {
                                 <img src="BilderSmaller/add_shopping_cart_black_36dp.svg" alt="Lägg till i Varukorg" />
                             </button>
                         </div>
-
                     </div>
                 </div>
             </div>

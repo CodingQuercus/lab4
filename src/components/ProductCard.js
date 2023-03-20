@@ -18,7 +18,19 @@ function ProductCard(props) {
         setFavorite(!favorite)
     };
 
+    const [added, setAddedToCart] = useState(true);
+
+    const addToCart = () => {
+        setAddedToCart(!added);
+
+        setTimeout(() => {
+            setAddedToCart(true);
+        }, 750);
+    }
+
     return (
+        <>
+        {added &&
         <div className="item-card" onMouseEnter={toggleShadow} onMouseLeave={toggleShadow} id={over? "" : "active"}>
             <div className="item-image">
                 <img src={props.img} alt={props.alt}/>
@@ -37,11 +49,18 @@ function ProductCard(props) {
                     <img src="BilderSmaller/favorite_red_36dp.svg" alt="Lagt till i önskelista"
                         className="added-favorite-icon" id={favorite ? "" : "active"}/>
                 </button>
-                <button className="add-shopping">
+                <button className="add-shopping" onClick={addToCart}>
                     <img src="BilderSmaller/add_shopping_cart_black_36dp.svg" alt="Lägg till i Varukorg" />
                 </button>
             </div>
-        </div>
+        </div>}
+        {!added &&
+            <div className="added-to-cart" onMouseEnter={toggleShadow} onMouseLeave={toggleShadow}>
+                <i>&#10004;</i>
+                <p>Tillagd i varukorgen</p>
+            </div>
+        }
+        </>
     )
 }
 
