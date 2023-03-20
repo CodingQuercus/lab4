@@ -264,7 +264,6 @@ main .image {
 }
 
 .prev {
-   justify-self: start;
    border:none;
    font-size: 36px;
    padding: 0;
@@ -273,7 +272,6 @@ main .image {
 }
 
 .next {
-   justify-self: end;
    border:none;
    font-size: 36px;
    padding: 0;
