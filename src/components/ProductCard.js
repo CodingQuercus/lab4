@@ -25,7 +25,7 @@ function ProductCard(props) {
 
         setTimeout(() => {
             setAddedToCart(true);
-        }, 750);
+        }, 500);
     }
 
     return (
@@ -57,7 +57,7 @@ function ProductCard(props) {
         {!added &&
             <div className="added-to-cart" onMouseEnter={toggleShadow} onMouseLeave={toggleShadow}>
                 <i>&#10004;</i>
-                <p>Tillagd i varukorgen</p>
+                <p>Tillagd i varukorgen!</p>
             </div>
         }
         </>

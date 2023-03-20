@@ -549,7 +549,7 @@ figcaption {
    border-radius: 10px;
    padding: 20px;
    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px 0px;
-   background-color: none;
+   background-color: #EF9308;
    align-items: center;
    justify-content: center;
 }
