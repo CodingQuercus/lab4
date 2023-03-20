@@ -5,6 +5,10 @@ function ContactForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
         setSent(true);
     }
 

@@ -259,7 +259,8 @@ main .image {
    border:none;
    align-items: center;
    justify-self: center;
-   gap: 30px;
+   gap: 20px;
+   color: #1d1d1d;
 }
 
 .prev {
@@ -279,12 +280,6 @@ main .image {
    width:50px;
    height: 50px;
 }
-
-.dots {
-   display: flex;
-   justify-content: center;
-}
-
 
 /*HIDDEN DIV STYLES*/
 #toggle-container {
@@ -725,12 +720,14 @@ footer .top-btn {
    height: min-content;
    align-items: center;
    justify-self: center;
+   color: #1d1d1d;
 }
 
 .thanks {
    display: flex;
    flex-direction: column;
    align-items: center;
+   color: #1d1d1d;
 }
 
 .thanks-message {
@@ -827,6 +824,7 @@ table {
    align-items: center;
    justify-content: center;
    padding: 10px;
+   color: #1d1d1d;
 }
 
 .order-button:hover {
