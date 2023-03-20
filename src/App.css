@@ -992,6 +992,15 @@ table {
       justify-self: center;
    }
 
+   .added-to-cart {
+      width: 90%;
+      justify-self: center;
+   }
+
+   .news .item-card {
+      width: 90%;
+   }
+
    .cart-card {
       width: 180px;
    }

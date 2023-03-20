@@ -55,7 +55,7 @@ function ProductCard(props) {
                     </div>
                 </div>}
             {!added &&
-                <div className="added-to-cart" onMouseEnter={toggleShadow}>
+                <div className="added-to-cart" onMouseEnter={toggleShadow} onMouseLeave={toggleShadow}>
                     <i>&#10004;</i>
                     <p>Tillagd i varukorgen!</p>
                 </div>
