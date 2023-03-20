@@ -556,6 +556,11 @@ figcaption {
 
 .added-to-cart i {
    font-size: 36px;
+   color: #1d1d1d;
+}
+
+.added-to-cart p {
+   color: #1d1d1d;
 }
 
 
