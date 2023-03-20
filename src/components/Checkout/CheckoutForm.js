@@ -1,7 +1,7 @@
 import CheckoutPayment from "./CheckoutPayment";
 import CheckoutTotalTable from "./CheckoutTotalTable"
 
-function CheckoutForm( {toggleContent} ) {
+export default function CheckoutForm( {toggleContent} ) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -66,5 +66,3 @@ function CheckoutForm( {toggleContent} ) {
         </>
     )
 }
-
-export default CheckoutForm;

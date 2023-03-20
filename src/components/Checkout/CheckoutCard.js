@@ -1,6 +1,6 @@
 import React from "react"
 
-function CartCard(props) {
+export default function CartCard(props) {
     return(
         <div className="cart-card">
                 <h4>{props.title}</h4>
@@ -11,5 +11,3 @@ function CartCard(props) {
         </div>
     )
 }
-
-export default CartCard;

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function ContactForm() {
+export default function ContactForm() {
     const [sent, setSent] = useState(false)
 
     const handleSubmit = (e) => {
@@ -55,4 +55,3 @@ function ContactForm() {
         </>
     )
 }
-export default ContactForm;

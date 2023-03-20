@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-function ProductPage(props) {
+export default function ProductPage(props) {
     const [favorite, setFavorite] = useState(true);
 
     const addFavoriteItem = () => {
@@ -57,5 +57,3 @@ function ProductPage(props) {
         </main>
     )
 }
-
-export default ProductPage;

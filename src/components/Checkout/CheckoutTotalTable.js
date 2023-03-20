@@ -1,4 +1,4 @@
-function CheckoutTotalTable() {
+export default function CheckoutTotalTable() {
     return (
         <table id="shopping-cart-total">
                 <tbody>
@@ -20,5 +20,3 @@ function CheckoutTotalTable() {
         </table>
     )
 }
-
-export default CheckoutTotalTable;

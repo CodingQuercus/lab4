@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-function Dropdown(props) {
+export default function Dropdown(props) {
 
     const [visible, setVisible] = useState(true);
 
@@ -20,5 +20,3 @@ function Dropdown(props) {
         </li>
     )
 }
-
-export default Dropdown;

@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import images from "../data/Images"
 
-function Carousel() {
+export default function Carousel() {
 
     const[index, setIndex] = useState(0);
 
@@ -40,5 +40,3 @@ function Carousel() {
         </div>
     )
 }
-
-export default Carousel;

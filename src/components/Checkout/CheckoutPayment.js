@@ -1,4 +1,4 @@
-function CheckoutPayment() {
+export default function CheckoutPayment() {
     return (
         <div className="order">
             <h3>Betalmetod</h3>
@@ -21,5 +21,3 @@ function CheckoutPayment() {
         </div>
     )
 }
-
-export default CheckoutPayment;
