@@ -34,8 +34,8 @@ export default function Carousel() {
         <div className="main-image">
             <img src={images[index].img} alt={images[index].alt} className="image" />
             <div className="carousel-buttons">
-                <button className="prev" onClick={prevImg}>&#8656;</button>
-                <button className="next" onClick={nextImg}>&#8658;</button>
+                <button className="prev" onClick={prevImg}>&#8592;</button>
+                <button className="next" onClick={nextImg}>&#8594;</button>
             </div>
         </div>
     )

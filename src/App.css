@@ -264,19 +264,25 @@ main .image {
 }
 
 .prev {
+   display: flex;
    border:none;
    font-size: 36px;
    padding: 0;
    width:50px;
    height: 50px;
+   align-self: center;
+   justify-content: center;
 }
 
 .next {
+   display: flex;
    border:none;
    font-size: 36px;
    padding: 0;
    width:50px;
    height: 50px;
+   align-self: center;
+   justify-content: center;
 }
 
 /*HIDDEN DIV STYLES*/
