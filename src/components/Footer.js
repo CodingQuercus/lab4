@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 export default function Footer() {
 
     const scrollToTop = () => {
@@ -30,7 +32,7 @@ export default function Footer() {
                     <img src="Bilder/facebook.png" alt="Facebook Mickes's Discgolf" className="social" />
                 </figure>
             </a>
-            <a href="video.html">Länk till video</a>
+            <Link to="/video">Länk till video</Link>
             <button className="top-btn" onClick={scrollToTop}>
                 <img src="BilderSmaller/arrow_upward_FILL0_wght400_GRAD0_opsz40.svg"
                     alt="Klicka för att scrolla till toppen" />

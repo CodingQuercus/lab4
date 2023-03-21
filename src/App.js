@@ -12,6 +12,7 @@ import ProductZen from "./pages/ProductZen";
 import ProductMermaid from "./pages/ProductMermaid";
 import ProductLoneHowl from "./pages/ProductLoneHowl";
 import TestProduct from "./pages/Testproduct"
+import Video from "./pages/Video";
 
 import { Route, Routes } from "react-router-dom";
 
@@ -48,6 +49,7 @@ function App() {
         <Route path="/productmermaid" element={<ProductMermaid />} />
         <Route path="/productlonehowl" element={<ProductLoneHowl />} />
         <Route path="/testproduct" element={<TestProduct />} />
+        <Route path="/video" element={<Video />} />
       </Routes>
       <Footer />
     </Container>
